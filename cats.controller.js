@@ -5,7 +5,19 @@ const GATOS = [
     id: 1,
     nome: "Franeudos",
     corOlhos: "verde",
-    raça: "sphynx"
+    raca: "sphynx"
+  },
+  {
+    id: 2,
+    nome: "Chico",
+    corOlhos: "azul",
+    raca: "siamês"
+  },
+  {
+    id: 3,
+    nome: "Chambaril",
+    corOlhos: "castanho",
+    raca: "munchkin"
   }
 ]
 
@@ -13,6 +25,6 @@ const GATOS = [
 export class CatsController {
   @Get()
   findAll(){
-    return 'Retorna todos os gatos'
+    return GATOS
   }
 }
